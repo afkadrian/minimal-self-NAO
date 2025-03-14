@@ -12,7 +12,7 @@ import random
 # Flask server for communication
 app = Flask(__name__)
 #timestemp = datetime.datetime.now()
-image_dir = "/Users/adrianschiller/Documents/IT/Minimal_Self_Seminar/Images/"
+image_dir = "PATH-TO-PROJECT-ROOT/Images/"
 run_id = 0
 
 IGNORE = False

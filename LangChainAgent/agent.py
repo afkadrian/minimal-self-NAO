@@ -13,13 +13,14 @@ import requests
 import os
 
 from dotenv import load_dotenv
+# Load environment variables
+load_dotenv()
+
 from typing import Dict, List, Optional, Sequence, Union
 import base64
 from simple_colors import get_color_code
 from prompts import IMAGE_ANALYSIS_PROMPT, NAO_MOTION_PROMPT, MIRROR_TEST_PROMPT
 from llm import gpt4
-# Load environment variables
-load_dotenv()
 
 from datetime import datetime
 
@@ -27,9 +28,9 @@ from datetime import datetime
 server_url = "http://localhost:5000"
 
 
-image_dir = f"/Users/adrianschiller/Documents/IT/Minimal_Self_Seminar/Images/"#run_{datetime.timestamp(datetime.now())}/"
+image_dir = "./Images/"
 run_id = 0
-#os.mkdir(image_dir)
+os.mkdir(image_dir)
 
 image_id = 0
 # Tool: CaptureImage
